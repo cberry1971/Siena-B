@@ -87,7 +87,7 @@ nav li {
 aside {
   grid-area: aside;
   position: relative;
-  background: url("./images/aside2.png");
+  background: url("./images/aside2.jpg");
   border-top: .5px;
   border-bottom: .5px;
   border-color: #bbbbbb;
