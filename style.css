@@ -11,7 +11,9 @@ body {
   width: 100%; /* 960 / 960 */
   padding-top: 1.0416666666666666%; /* 10 / 960 */
   font-family: "Helvetica Neue", Helvetica, sans-serif;
-	color: #555555;
+  font-size: 1em;
+	color: #333;
+  background-color: #fff;
 }
 
 .grid {
@@ -31,7 +33,7 @@ a {
   text-decoration: none;
   font-size: 14px;
   font-weight: 300;
-  color: #555555;
+  color: #333;
   text-transform: uppercase;
 }
 
@@ -45,7 +47,10 @@ a:hover {
 
 header {
   grid-area: header;
-  position: relative;
+  position: fixed;
+  z-index: 1;
+  overflow: hidden;
+  top: 0;
   width: 100%;
   height: 70px;
   background: #ffffff;
@@ -60,7 +65,7 @@ header {
 header h1 {
  background: #ffffff;
  display: inline-block;
- font-size: 3.1em;
+ font-size: 3.5em;
  font-weight: 150;
  position: absolute;
  left: 50%;
@@ -89,6 +94,7 @@ nav li {
 aside {
   grid-area: aside;
   position: relative;
+  margin-top: 90px;
   background: url("./images/aside2.jpg");
   border-top: .5px;
   border-bottom: .5px;
@@ -161,28 +167,32 @@ main h2 {
 /* About Section */
 
 .about {
-  margin: 50px 50px 100px 50px;
+  margin: 8% 11% 3% 10%;
+  padding-top: 2%;
+  text-align: justify;
+    text-justify: inter-word;
 }
 
 .about img {
   width: 30%;
-  margin-right: 30px;
+  margin: 3% 3% 0  0;
   border: 1px solid black;
   border-radius: 3%;
   float: left;
 }
 
-.theDesigner {
-  font-size: 30px;
-  margin-top: 50px;
-  padding-top: 50px;
-  color: #000000;
+.about h2 {
+  font-size: 2em;
+  width: 100%;
+  text-align: center;
   text-transform: uppercase;
   font-weight: 300;
 }
+/*-----------------terms of service-------------*/
 
-.about p {
-  margin-right: 40px
+.terms {
+  width: 90%;
+  margin: 10% 5% 5% 5%;
 }
 
 /* footer copyright social media menu links */
@@ -191,7 +201,7 @@ footer {
   grid-area: footer;
   background: #eeeeee;
   text-align: center;
-  margin: 30px 0 0 0;
+  margin: 3% 0 0 0;
 }
 
 footer .footer-columns div {
@@ -228,12 +238,13 @@ footer nav {
 }
 
 
+
+
+
 /*-----------------media queries-------------*/
 
 @media screen and (max-width: 768px) {
   header {
-    grid-area: header;
-    position: static;
     height: 85px;
   }
 
@@ -250,4 +261,23 @@ footer nav {
     display: block;
     position: static;
     text-align: center;
+}
+
+aside{
+  height: 150px;
+}
+
+.about{
+  padding-top: 8%;
+}
+}
+
+@media screen and (max-width: 500px) {
+  .about{
+    padding-top: 15%;
+  }
+
+  .about img{
+    margin-top: 6%;
+  }
 }
