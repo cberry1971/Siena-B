@@ -225,17 +225,32 @@ main h2 {
 
 .stores ul li {
   width: 90%;
+  font-size: 1.6;
+}
+
+.stores li div{
+  text-align: center;
+  padding: 3% 0 3% 0;
+}
+
+.stores ul li a{
+  font-size: 1.1em;
+  text-align: center;
+  font-weight: bold;
 }
 
 .carolina {
   background-color: #edbfaf;
-  text-align: center;
-  padding: 5% 0 5% 0;
 }
 
-.carolina a {
-  font-size: 1.1em;
+.sparadiance{
+  background-color: #1d5fab;
 }
+
+.sparadiance a{
+  color: #fff;
+}
+
 
 /* footer copyright social media menu links */
 
